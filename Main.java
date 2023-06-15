@@ -5,7 +5,7 @@ class Main {
     Scanner o = new Scanner(System.in);
 
     while(true)
-      {
+      {                                    //selecting the operation
        System.out.println("Automated Teller Machine");
        System.out.println("Enter 1 to Withdraw");
        System.out.println("Enter 2 to Deposit");
@@ -16,7 +16,7 @@ class Main {
         int choice = o.nextInt();
         switch(choice)
           {
-            case 1:
+            case 1:                               //Withdraw
              
               System.out.print("Enter money to be withdrawn:");
               withdraw = o.nextInt();
@@ -33,7 +33,7 @@ class Main {
               
                break;
                 
-            case 2:
+            case 2:                            //Deposit
               
               System.out.print("Enter money to be deposited:");
                 deposit = o.nextInt();
@@ -44,7 +44,7 @@ class Main {
                 
                break;
 
-            case 3:
+            case 3:                            //check balance
               
               System.out.println("Balance: "+balance);
               System.out.println("");
